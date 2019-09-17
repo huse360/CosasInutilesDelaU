@@ -4,15 +4,15 @@ Semana 2
 Hacer un programa que almacene los 50 primeros números de la serie Fibonacci
 y posteriormente los muestre de acuerdo al siguiente formato:
 
-(1) * 1 
-(2) ** 1 
-(3) *** 2 
-(4) **** 3 
-(5) ***** 5 
-(6) * 8 
-(7) ** 13 
-(8) *** 21 
-(9) **** 34 
+( 1) * 1 
+( 2) ** 1 
+( 3) *** 2 
+( 4) **** 3 
+( 5) ***** 5 
+( 6) * 8 
+( 7) ** 13 
+( 8) *** 21 
+( 9) **** 34 
 (10) ***** 55 
 (11) * 89 
 (12) ** 144 
@@ -53,7 +53,7 @@ y posteriormente los muestre de acuerdo al siguiente formato:
 (47) ** 2971215073 
 (48) *** 4807526976 
 (49) **** 7778742049 
-(50) ***** 12586269025
+(50) ***** 12586269025 
 
 */
 
@@ -75,8 +75,11 @@ int main()
     
     for (int i = 0; i < 50; i++)
     {
-        printf("(%i) %s %lld \n", i+1, &ast[4-(i % 5)], fib[i+1] );
+        printf("(%2i) %s %lld \n", i+1, &ast[4-(i % 5)], fib[i+1] );
     }
+
+}
+
 
 }
 
